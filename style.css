@@ -221,9 +221,23 @@ nav button svg{
 #page2{
     width: 100%;
     min-height:100vh;
+    /* background-color: red; */
+}
+
+
+#page2-left{
+    width: 50%;
+    height: 100%;
+    background-color: #0da34e;
+    position: relative;
+}
+
+/* #page3{
+    width: 100%;
+    min-height:100vh;
     background-color: #111;
 }
-#page2-content{
+#page3-content{
     height: 100%;
     width: 100%;
     display: flex;
@@ -231,12 +245,12 @@ nav button svg{
     justify-content: center; 
 }
 
-#page2 #videoDiv{
+#page3 #videoDiv{
     width: 82%;
 }
 
 #videoDiv video{
     width: 100%;
     object-fit: cover;
-}
+} */
 

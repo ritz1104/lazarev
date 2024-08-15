@@ -1,0 +1,242 @@
+@font-face {
+    font-family: primary;
+    src: url(./fonts/l\ \(1\));
+}
+@font-face {
+    font-family: secondry;
+    src: url(./fonts/64dd054cabb425ac6a0d4607_Leiko-Regular.woff2);
+}
+
+@font-face {
+    font-family: primary1;
+    src: url(./fonts/l\ \(2\));
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 12vh;
+    justify-content: space-between;
+    padding:2vw 5.2vw;
+    z-index: 99;
+    background-color: #111;
+}
+nav h1{
+    font-family: primary1;
+    font-size: 2vw;
+}
+nav .navpart2{
+    display: flex;
+    align-items: flex-start;
+    gap: 2vw;
+    position: relative;
+    z-index: 10;
+    margin-top: 1vw;
+}
+
+.navpart2 h4{
+    font-size: 0.8vw;
+    text-transform: uppercase;
+    font-family: primary;
+    font-weight: 100;
+    margin-bottom: 2vw;
+}
+.navpart2 h5 span{
+    font-size: 0.8vw;
+    font-family: primary;
+    font-weight: 100;
+    display: inline-block;
+}
+.navpart2 .nav-elem h5{
+    margin-bottom: 0.8vw;
+    display: none;
+    overflow: hidden;
+}
+nav button{
+    padding: 0.8vw 2.5vw;
+    background-color: #0da34e;
+    border: none;
+    border-radius: 2vw;
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-family: primary;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+nav button svg{
+    height: 1vw;
+}
+
+.nav-bottom{
+    width: 90%;
+    position: absolute;
+    top: 100%;
+    height: 0;
+    border-bottom: 1px solid #dadada;
+    transition: all ease 0.65s;
+    z-index: 9;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #111;
+}
+
+#page1{
+    width: 100%;
+   min-height:100vh;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+#page1 h1{
+    font-size: 6vw;
+    font-family: primary1;
+    font-weight: 600;
+    margin-top: 2vw;
+    line-height: 6.5vw;
+    letter-spacing: 0.3vw;
+}
+
+#page1 h5{
+    font-size: 1.4vw;
+    font-family: primary1;
+    font-weight: 100;
+   opacity: 0.8;
+   text-transform: capitalize;
+}
+
+#page1 h5 span{
+    opacity: 0.5;
+}
+
+#page1 p{
+    font-size: 1.4vw;
+    font-family: primary;
+    margin-top: 4vw;
+    font-weight: 300;
+}
+
+#page1 p span{
+    color: #0da34e;
+    background-color: #0da34e1a;
+    border-radius: 50vw;
+    padding: .3em 1.1em .2em;
+    display: inline-block;
+    border: 2px solid #0da34e;
+}
+
+.rotateDiv{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3vw;
+    gap: 1vw;
+    margin-top: 5vw;
+    padding-left: 1vh;
+}
+.box{
+    width: 17vw;
+    height: 9vh;
+    background-color: #3b393969;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0.1em 1.2em 0.1em 0.5em;
+    border-radius: 2vw;
+    gap: 0.7em;
+    transition: all ease 0.5s;
+
+}
+.box h4{
+    font-size: 1vw;
+    font-family: primary;
+    font-weight: 100;
+    opacity: 0.8;
+    text-align: start;
+}
+.box img{
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50vw;
+    object-fit: cover;
+}
+
+.box:hover{
+    background-color: #4F5BFF;
+}
+.box:hover img{
+    animation: rotate 1s infinite linear;
+}
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);    
+    }
+}
+#articles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    width: 17vw;
+    height: 9vh;
+    background-color: #3b393969;
+    padding: 0.1em 1em 0.1em 0.2em;
+    border-radius: 2vw;
+    gap: 0.7em;
+    transition: all ease 0.5s;
+
+}
+
+#articles i{
+    display: inline-block;
+    font-size: 2vw;
+    opacity: 0.8;
+}
+
+#articles h4{
+    font-size: 1vw;
+    font-family: primary;
+    font-weight: 100;
+    opacity: 0.8;
+    text-align: start;
+}
+
+#page2{
+    width: 100%;
+    min-height:100vh;
+    background-color: #111;
+}
+#page2-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#page2 #videoDiv{
+    width: 82%;
+}
+
+#videoDiv video{
+    width: 100%;
+    object-fit: cover;
+}
+
